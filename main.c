@@ -22,6 +22,7 @@ _CONFIG2( IESO_OFF & SOSCSEL_SOSC & WUTSEL_LEG & FNOSC_PRIPLL & FCKSM_CSDCMD & O
           IOL1WAY_OFF & I2C1SEL_PRI & POSCMOD_XT )
 
 /********************************************************************************/
+// An FSM modeled with switch statements.
 int main(int argc, char** argv) {
 					
     while(1)

@@ -5,9 +5,10 @@
 #include <stdio.h>
 #include <string.h>
 #include "timers.h"
+// Controls the flow of the program between its main functionalities.
 
 /********************************************************************************/
-
+// List of menu options
 char *mainMenuOptions[] =
 {
     "---MAINMENU---",

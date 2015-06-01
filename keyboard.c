@@ -9,6 +9,13 @@
 #define charsSelectionRange (inputVoltage/keyBoardArraySize)
 #define KEYBOARD_INDEX_MAX 2
 #define KEYBOARD_INDEX_MIN 0
+#define MOVE_LEFT 0
+#define MOVE_RIGHT 12
+#define DISPLAY_ROW 5
+// This is the keyboard. This displays the keyboard and returns a char only.
+// Lets me use it across multiple files.
+
+/*****************************************************************************/
 
 struct keyboard
 {
@@ -27,8 +34,10 @@ KeyBoard =
     // Initialization of columns and rows.
     ,0,0
 };
-    
 
+/*****************************************************************************/
+// Displays the currently selectable keys on a single row. Row can be set to values
+// 1 - 5.
 void displayKeyboard(int rowToBeDisplayed)
 {
     int i = 0, j = 0;
@@ -49,7 +58,8 @@ void displayKeyboard(int rowToBeDisplayed)
 }
 
 /********************************************************************************/
-
+// Depending on the positino of the potentiometer, one char from the keyboard will
+// be highlighted, this calcuates which char that is.
 void highlightChar()
 {
     int i = 0;
@@ -66,7 +76,7 @@ void highlightChar()
 }
 
 /********************************************************************************/
-
+// Returns the char that is currently highlighted if the pushBotton is pressed.
 char getHighlightedChar()
 {
     int isCharReturned = FALSE;
@@ -74,7 +84,7 @@ char getHighlightedChar()
     if(buttonPressed == TRUE)
     {
         buttonPressed = FALSE;
-        if(KeyBoard.CursorPosition == 0)
+        if(KeyBoard.CursorPosition == MOVE_LEFT)
         {
               KeyBoard.ArrayRow -= 1;
               if(KeyBoard.ArrayRow < KEYBOARD_INDEX_MIN)
@@ -82,7 +92,7 @@ char getHighlightedChar()
                   KeyBoard.ArrayRow = KEYBOARD_INDEX_MAX;
               }
         }
-        else if(KeyBoard.CursorPosition == 12)
+        else if(KeyBoard.CursorPosition == MOVE_RIGHT)
         {
               KeyBoard.ArrayRow += 1;
               if(KeyBoard.ArrayRow > KEYBOARD_INDEX_MAX)
@@ -92,7 +102,7 @@ char getHighlightedChar()
         }
         else
         {
-            displayKeyboard(5);
+            displayKeyboard(DISPLAY_ROW);
             buttonPressed = FALSE;
             isCharReturned = TRUE;
         }
@@ -107,3 +117,5 @@ char getHighlightedChar()
         return(NULL);
     }
 }
+
+/*****************************************************************************/

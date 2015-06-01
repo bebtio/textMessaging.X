@@ -7,8 +7,13 @@
 #include <stdlib.h>
 #include "menuScreen.h"
 
-/********************************************************************************/
+// This is a cheap version of a clock, it becomes off by 3 minutes every eight hours
+// when I do it.  Your results may vary.
+// I tried to use the RTCC module internal to the microcontroller but couldn't get it
+// to work properly.  I'll leave it like this until I can figure it out.
 
+/********************************************************************************/
+// This will be the "parts" to build the clock menu scree.
 char *clockMenuOptions[] =
 {
     "|----TIME----|",
@@ -21,17 +26,17 @@ char *clockMenuOptions[] =
 void initClock()
 {
     // Enter Current Time Here
-
     current_time_hours   = 2;
     current_time_minutes = 8;
     current_time_seconds = 50;
-    
+
+    // The timer that will update time from entered start.
     initTimer3();
 
 }
 
 /********************************************************************************/
-
+// Sets up the display for the clock.
 void initClockMenu()
 {
     moveCursorLCD(0,0);
@@ -48,19 +53,25 @@ void initClockMenu()
     writeStringLCD(clockMenuOptions[2]);
     clockMenuEntered = 1;
 }
+
+/********************************************************************************/
+// Displays the time and date, updating the changes.
 void displayClockMenu()
 {
+    // Helps in updating only text that is acutually changing.
     if(clockMenuEntered == 0)
     {
         initClockMenu();
     }
+
     moveCursorLCD(9,2);
     writeStringLCD(getTimeString());
     moveCursorLCD(6,3);
     writeStringLCD("!!The Date!!");
 }
-/********************************************************************************/
 
+/********************************************************************************/
+// Returns the time as a string.
 char* getTimeString()
 {
     sprintf(time_string, "%02d:%02d:%02d:%d%d", current_time_hours,current_time_minutes,current_time_seconds,current_time_deciseconds,current_time_centiseconds);
@@ -69,7 +80,7 @@ char* getTimeString()
 
 
 /********************************************************************************/
-
+// Using timer3 keeps track of how much time has passed since start.
 void _ISR _T3Interrupt(void)
 {
     IFS0bits.T3IF = 0;
@@ -111,23 +122,6 @@ void _ISR _T3Interrupt(void)
         }
     }
 
-}
-
-/********************************************************************************/
-
-
-// Tells the robot how long it has been sitting in front of an obstacle, if the
-// time is greater than a predefined amount, the robot go to the turnAroundState.
-void _ISR _T4Interrupt(void)
-{
-
-    IFS1bits.T4IF = 0;
-
-    if(goBackCount >= goBackCountMax)
-    {
-        goBackFlag = 1;
-        T4CONbits.TON = 0;
-    }
 }
 
 /********************************************************************************/

@@ -130,9 +130,9 @@ section                    address   length (PC units)   length (bytes) (dec)
 .const                      0x1180              0x11e8          0x1adc  (6876)
 .text                       0x2368               0x668           0x99c  (2460)
 .dinit                      0x29d0               0x19c           0x26a  (618)
-.text                       0x2b6c               0x734           0xace  (2766)
+.text                       0x2b6c               0x70e           0xa95  (2709)
 
-                     Total program memory used (bytes):         0x48f0  (18672) 28%
+                     Total program memory used (bytes):         0x48b7  (18615) 28%
 
 
 Data Memory  [Origin = 0x800, Length = 0x2000]
@@ -303,42 +303,40 @@ External Symbols in Program Memory (by address):
                   0x002d58                  _displayClockMenu
                   0x002d7e                  _getTimeString
                   0x002da6                  __T3Interrupt
-                  0x002e22                  __T4Interrupt
-                  0x002e48                  _initPasswordScreen
-                  0x002e82                  _readPasswordInput
-                  0x002ec0                  _passwordStateTransition
-                  0x002eee                  _exceedsPasswordSize
-                  0x002f26                  _compareInputAndPassword
-                  0x002f44                  _delayUs
-                  0x002f92                  _delayMs
-                  0x002fea                  _initTimer3
-                  0x003014                  _delaySeconds
-                  0x003034                  _initADC
-                  0x00308a                  _getADCBuffVal
-                  0x003122                  _initSPI
-                  0x00312a                  _init_SPI2
-                  0x003170                  _write_SPI2
-                  0x00318a                  __SPI2Interrupt
-                  0x003198                  _initMainMenu
-                  0x0031d4                  _goBackToMainMenu
-                  0x0031da                  __CNInterrupt
-                  0x003202                  _initState
-                  0x00322c                  _waitState
-                  0x003232                  _menuScreensState
-                  0x00323a                  _initPasswordState
-                  0x003242                  _passwordState
-                  0x00324a                  _main
-                  0x003284                  _initSelectorButton1
+                  0x002e22                  _initPasswordScreen
+                  0x002e5c                  _readPasswordInput
+                  0x002e9a                  _passwordStateTransition
+                  0x002ec8                  _exceedsPasswordSize
+                  0x002f00                  _compareInputAndPassword
+                  0x002f1e                  _delayUs
+                  0x002f6c                  _delayMs
+                  0x002fc4                  _initTimer3
+                  0x002fee                  _delaySeconds
+                  0x00300e                  _initADC
+                  0x003064                  _getADCBuffVal
+                  0x0030fc                  _initSPI
+                  0x003104                  _init_SPI2
+                  0x00314a                  _write_SPI2
+                  0x003164                  __SPI2Interrupt
+                  0x003172                  _initMainMenu
+                  0x0031ae                  _goBackToMainMenu
+                  0x0031b4                  __CNInterrupt
+                  0x0031dc                  _initState
+                  0x003206                  _waitState
+                  0x00320c                  _menuScreensState
+                  0x003214                  _initPasswordState
+                  0x00321c                  _passwordState
+                  0x003224                  _main
+                  0x00325e                  _initSelectorButton1
 
 External Symbols in Program Memory (by name):
 
                   0x00261e                  _LCDBitmap
                   0x0026f6                  _UpdateMessageMenuText
-                  0x0031da                  __CNInterrupt
+                  0x0031b4                  __CNInterrupt
                   0x00029a                  __DefaultInterrupt
-                  0x00318a                  __SPI2Interrupt
+                  0x003164                  __SPI2Interrupt
                   0x002da6                  __T3Interrupt
-                  0x002e22                  __T4Interrupt
                   0x000300                  ___addsf3
                   0x00102e                  ___divdi3
                   0x0003ba                  ___divsf3
@@ -379,60 +377,60 @@ External Symbols in Program Memory (by name):
                   0x000690                  __vfprintf_cdnopuxX
                   0x001756                  _charWidth
                   0x002402                  _clearLCD
-                  0x002f26                  _compareInputAndPassword
-                  0x002f92                  _delayMs
-                  0x003014                  _delaySeconds
-                  0x002f44                  _delayUs
+                  0x002f00                  _compareInputAndPassword
+                  0x002f6c                  _delayMs
+                  0x002fee                  _delaySeconds
+                  0x002f1e                  _delayUs
                   0x002648                  _deletePreviousChar
                   0x002d58                  _displayClockMenu
                   0x00281c                  _displayKeyboard
                   0x002b6c                  _displayMainMenu
                   0x00264e                  _displayMessageMenu
                   0x00259c                  _drawBorder
-                  0x002eee                  _exceedsPasswordSize
-                  0x00308a                  _getADCBuffVal
+                  0x002ec8                  _exceedsPasswordSize
+                  0x003064                  _getADCBuffVal
                   0x002c52                  _getCursorHighlightStateMainMenu
                   0x00277c                  _getCursorHighlightStateforMessaging
                   0x002922                  _getHighlightedChar
                   0x002d7e                  _getTimeString
-                  0x0031d4                  _goBackToMainMenu
+                  0x0031ae                  _goBackToMainMenu
                   0x002896                  _highlightChar
-                  0x003034                  _initADC
+                  0x00300e                  _initADC
                   0x002cf2                  _initClock
                   0x002d06                  _initClockMenu
                   0x002368                  _initLCD
-                  0x003198                  _initMainMenu
+                  0x003172                  _initMainMenu
                   0x002b78                  _initMainMenuText
                   0x00265a                  _initMessageMenuText
-                  0x002e48                  _initPasswordScreen
-                  0x00323a                  _initPasswordState
-                  0x003122                  _initSPI
-                  0x003284                  _initSelectorButton1
-                  0x003202                  _initState
-                  0x002fea                  _initTimer3
-                  0x00312a                  _init_SPI2
+                  0x002e22                  _initPasswordScreen
+                  0x003214                  _initPasswordState
+                  0x0030fc                  _initSPI
+                  0x00325e                  _initSelectorButton1
+                  0x0031dc                  _initState
+                  0x002fc4                  _initTimer3
+                  0x003104                  _init_SPI2
                   0x002530                  _invertColorSchemeLCD
-                  0x00324a                  _main
-                  0x003232                  _menuScreensState
+                  0x003224                  _main
+                  0x00320c                  _menuScreensState
                   0x00254a                  _moveCursorLCD
                   0x002586                  _moveToColumn
                   0x002570                  _moveToRow
                   0x001750                  _password
-                  0x003242                  _passwordState
-                  0x002ec0                  _passwordStateTransition
-                  0x002e82                  _readPasswordInput
+                  0x00321c                  _passwordState
+                  0x002e9a                  _passwordStateTransition
+                  0x002e5c                  _readPasswordInput
                   0x00253c                  _setContrastLCD
                   0x000648                  _strcmp
                   0x000656                  _strlen
                   0x002c0a                  _updateMainMenuText
-                  0x00322c                  _waitState
+                  0x003206                  _waitState
                   0x002482                  _writeCenteredStringLCD
                   0x0024b6                  _writeCharLCD
                   0x0024f2                  _writeInvertedCharLCD
                   0x002452                  _writeInvertedStringLCD
                   0x0023d6                  _writeLCD
                   0x002422                  _writeStringLCD
-                  0x003170                  _write_SPI2
+                  0x00314a                  _write_SPI2
 
 Memory Configuration
 
@@ -610,7 +608,7 @@ __CONFIG1         0x00abfe          0x2
 .comment
  *(.comment)
 
-.debug_info       0x000000       0x53ce
+.debug_info       0x000000       0x513c
  *(.debug_info)
  .debug_info      0x000000        0x24c build/default/production/main.o
  .debug_info      0x00024c        0xcdc build/default/production/nokiaLCD.o
@@ -623,12 +621,12 @@ __CONFIG1         0x00abfe          0x2
  .debug_info      0x00360a        0xb3a build/default/production/selectorButton.o
  .debug_info      0x004144        0x2c7 build/default/production/MainMenu.o
  .debug_info      0x00440b        0x2be build/default/production/MessagingMenu.o
- .debug_info      0x0046c9        0x6b0 build/default/production/ClockMenu.o
- .debug_info      0x004d79        0x2b9 build/default/production/keyboard.o
- .debug_info      0x005032        0x39c build/default/production/passwordScreen.o
+ .debug_info      0x0046c9        0x41e build/default/production/ClockMenu.o
+ .debug_info      0x004ae7        0x2b9 build/default/production/keyboard.o
+ .debug_info      0x004da0        0x39c build/default/production/passwordScreen.o
  *(.gnu.linkonce.wi.*)
 
-.debug_abbrev     0x000000        0xda4
+.debug_abbrev     0x000000        0xd38
  *(.debug_abbrev)
  .debug_abbrev    0x000000         0x9c build/default/production/main.o
  .debug_abbrev    0x00009c        0x1a0 build/default/production/nokiaLCD.o
@@ -641,11 +639,11 @@ __CONFIG1         0x00abfe          0x2
  .debug_abbrev    0x000808         0xe7 build/default/production/selectorButton.o
  .debug_abbrev    0x0008ef         0xcd build/default/production/MainMenu.o
  .debug_abbrev    0x0009bc         0xaa build/default/production/MessagingMenu.o
- .debug_abbrev    0x000a66        0x15c build/default/production/ClockMenu.o
- .debug_abbrev    0x000bc2        0x107 build/default/production/keyboard.o
- .debug_abbrev    0x000cc9         0xdb build/default/production/passwordScreen.o
+ .debug_abbrev    0x000a66         0xf0 build/default/production/ClockMenu.o
+ .debug_abbrev    0x000b56        0x107 build/default/production/keyboard.o
+ .debug_abbrev    0x000c5d         0xdb build/default/production/passwordScreen.o
 
-.debug_line       0x000000       0x18ff
+.debug_line       0x000000       0x18c5
  *(.debug_line)
  .debug_line      0x000000        0x10a build/default/production/main.o
  .debug_line      0x00010a        0x4ea build/default/production/nokiaLCD.o
@@ -658,11 +656,11 @@ __CONFIG1         0x00abfe          0x2
  .debug_line      0x000e15         0xde build/default/production/selectorButton.o
  .debug_line      0x000ef3        0x1ac build/default/production/MainMenu.o
  .debug_line      0x00109f        0x1fd build/default/production/MessagingMenu.o
- .debug_line      0x00129c        0x2bd build/default/production/ClockMenu.o
- .debug_line      0x001559        0x192 build/default/production/keyboard.o
- .debug_line      0x0016eb        0x214 build/default/production/passwordScreen.o
+ .debug_line      0x00129c        0x283 build/default/production/ClockMenu.o
+ .debug_line      0x00151f        0x192 build/default/production/keyboard.o
+ .debug_line      0x0016b1        0x214 build/default/production/passwordScreen.o
 
-.debug_frame      0x000000        0x4dc
+.debug_frame      0x000000        0x4cc
  *(.debug_frame)
  .debug_frame     0x000000         0x24 build/default/production/main.o
  .debug_frame     0x000024        0x114 build/default/production/nokiaLCD.o
@@ -674,11 +672,11 @@ __CONFIG1         0x00abfe          0x2
  .debug_frame     0x0002bc         0x24 build/default/production/selectorButton.o
  .debug_frame     0x0002e0         0x54 build/default/production/MainMenu.o
  .debug_frame     0x000334         0x54 build/default/production/MessagingMenu.o
- .debug_frame     0x000388         0xac build/default/production/ClockMenu.o
- .debug_frame     0x000434         0x44 build/default/production/keyboard.o
- .debug_frame     0x000478         0x64 build/default/production/passwordScreen.o
+ .debug_frame     0x000388         0x9c build/default/production/ClockMenu.o
+ .debug_frame     0x000424         0x44 build/default/production/keyboard.o
+ .debug_frame     0x000468         0x64 build/default/production/passwordScreen.o
 
-.debug_str        0x000000        0x3da
+.debug_str        0x000000        0x3b0
  *(.debug_str)
  .debug_str       0x000000          0xd build/default/production/main.o
  .debug_str       0x00000d         0x50 build/default/production/nokiaLCD.o
@@ -690,9 +688,9 @@ __CONFIG1         0x00abfe          0x2
  .debug_str       0x0001b9         0x45 build/default/production/selectorButton.o
  .debug_str       0x0001fe         0x47 build/default/production/MainMenu.o
  .debug_str       0x000245         0x67 build/default/production/MessagingMenu.o
- .debug_str       0x0002ac         0xde build/default/production/ClockMenu.o
- .debug_str       0x00038a         0x17 build/default/production/keyboard.o
- .debug_str       0x0003a1         0x39 build/default/production/passwordScreen.o
+ .debug_str       0x0002ac         0xb4 build/default/production/ClockMenu.o
+ .debug_str       0x000360         0x17 build/default/production/keyboard.o
+ .debug_str       0x000377         0x39 build/default/production/passwordScreen.o
 
 .debug_loc
  *(.debug_loc)
@@ -701,7 +699,7 @@ __CONFIG1         0x00abfe          0x2
  *(.debug_macinfo)
 
 .debug_pubnames
-                  0x000000        0x7a9
+                  0x000000        0x798
  *(.debug_pubnames)
  .debug_pubnames
                   0x000000         0x35 build/default/production/main.o
@@ -726,11 +724,11 @@ __CONFIG1         0x00abfe          0x2
  .debug_pubnames
                   0x000506         0xec build/default/production/MessagingMenu.o
  .debug_pubnames
-                  0x0005f2         0x90 build/default/production/ClockMenu.o
+                  0x0005f2         0x7f build/default/production/ClockMenu.o
  .debug_pubnames
-                  0x000682         0x5c build/default/production/keyboard.o
+                  0x000671         0x5c build/default/production/keyboard.o
  .debug_pubnames
-                  0x0006de         0xcb build/default/production/passwordScreen.o
+                  0x0006cd         0xcb build/default/production/passwordScreen.o
 
 .debug_ranges
  *(.debug_ranges)
@@ -792,7 +790,7 @@ __CONFIG1         0x00abfe          0x2
                   0x000034          0x4 LONG 0x29a DEFINED (__SI2C1Interrupt)?ABSOLUTE (__SI2C1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000036          0x4 LONG 0x29a DEFINED (__MI2C1Interrupt)?ABSOLUTE (__MI2C1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000038          0x4 LONG 0x29a DEFINED (__CompInterrupt)?ABSOLUTE (__CompInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00003a          0x4 LONG 0x31da DEFINED (__CNInterrupt)?ABSOLUTE (__CNInterrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00003a          0x4 LONG 0x31b4 DEFINED (__CNInterrupt)?ABSOLUTE (__CNInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00003c          0x4 LONG 0x29a DEFINED (__INT1Interrupt)?ABSOLUTE (__INT1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00003e          0x4 LONG 0x29a DEFINED (__Interrupt21)?ABSOLUTE (__Interrupt21):ABSOLUTE (__DefaultInterrupt)
                   0x000040          0x4 LONG 0x29a DEFINED (__Interrupt22)?ABSOLUTE (__Interrupt22):ABSOLUTE (__DefaultInterrupt)
@@ -800,13 +798,13 @@ __CONFIG1         0x00abfe          0x2
                   0x000044          0x4 LONG 0x29a DEFINED (__Interrupt24)?ABSOLUTE (__Interrupt24):ABSOLUTE (__DefaultInterrupt)
                   0x000046          0x4 LONG 0x29a DEFINED (__OC3Interrupt)?ABSOLUTE (__OC3Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000048          0x4 LONG 0x29a DEFINED (__OC4Interrupt)?ABSOLUTE (__OC4Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00004a          0x4 LONG 0x2e22 DEFINED (__T4Interrupt)?ABSOLUTE (__T4Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00004a          0x4 LONG 0x29a DEFINED (__T4Interrupt)?ABSOLUTE (__T4Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00004c          0x4 LONG 0x29a DEFINED (__T5Interrupt)?ABSOLUTE (__T5Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00004e          0x4 LONG 0x29a DEFINED (__INT2Interrupt)?ABSOLUTE (__INT2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000050          0x4 LONG 0x29a DEFINED (__U2RXInterrupt)?ABSOLUTE (__U2RXInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000052          0x4 LONG 0x29a DEFINED (__U2TXInterrupt)?ABSOLUTE (__U2TXInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000054          0x4 LONG 0x29a DEFINED (__SPI2ErrInterrupt)?ABSOLUTE (__SPI2ErrInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000056          0x4 LONG 0x318a DEFINED (__SPI2Interrupt)?ABSOLUTE (__SPI2Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000056          0x4 LONG 0x3164 DEFINED (__SPI2Interrupt)?ABSOLUTE (__SPI2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000058          0x4 LONG 0x29a DEFINED (__Interrupt34)?ABSOLUTE (__Interrupt34):ABSOLUTE (__DefaultInterrupt)
                   0x00005a          0x4 LONG 0x29a DEFINED (__Interrupt35)?ABSOLUTE (__Interrupt35):ABSOLUTE (__DefaultInterrupt)
                   0x00005c          0x4 LONG 0x29a DEFINED (__Interrupt36)?ABSOLUTE (__Interrupt36):ABSOLUTE (__DefaultInterrupt)
@@ -920,7 +918,7 @@ __CONFIG1         0x00abfe          0x2
                   0x000134          0x4 LONG 0x29a DEFINED (__AltSI2C1Interrupt)?ABSOLUTE (__AltSI2C1Interrupt):DEFINED (__SI2C1Interrupt)?ABSOLUTE (__SI2C1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000136          0x4 LONG 0x29a DEFINED (__AltMI2C1Interrupt)?ABSOLUTE (__AltMI2C1Interrupt):DEFINED (__MI2C1Interrupt)?ABSOLUTE (__MI2C1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000138          0x4 LONG 0x29a DEFINED (__AltCompInterrupt)?ABSOLUTE (__AltCompInterrupt):DEFINED (__CompInterrupt)?ABSOLUTE (__CompInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00013a          0x4 LONG 0x31da DEFINED (__AltCNInterrupt)?ABSOLUTE (__AltCNInterrupt):DEFINED (__CNInterrupt)?ABSOLUTE (__CNInterrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00013a          0x4 LONG 0x31b4 DEFINED (__AltCNInterrupt)?ABSOLUTE (__AltCNInterrupt):DEFINED (__CNInterrupt)?ABSOLUTE (__CNInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00013c          0x4 LONG 0x29a DEFINED (__AltINT1Interrupt)?ABSOLUTE (__AltINT1Interrupt):DEFINED (__INT1Interrupt)?ABSOLUTE (__INT1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00013e          0x4 LONG 0x29a DEFINED (__AltInterrupt21)?ABSOLUTE (__AltInterrupt21):DEFINED (__Interrupt21)?ABSOLUTE (__Interrupt21):ABSOLUTE (__DefaultInterrupt)
                   0x000140          0x4 LONG 0x29a DEFINED (__AltInterrupt22)?ABSOLUTE (__AltInterrupt22):DEFINED (__Interrupt22)?ABSOLUTE (__Interrupt22):ABSOLUTE (__DefaultInterrupt)
@@ -928,13 +926,13 @@ __CONFIG1         0x00abfe          0x2
                   0x000144          0x4 LONG 0x29a DEFINED (__AltInterrupt24)?ABSOLUTE (__AltInterrupt24):DEFINED (__Interrupt24)?ABSOLUTE (__Interrupt24):ABSOLUTE (__DefaultInterrupt)
                   0x000146          0x4 LONG 0x29a DEFINED (__AltOC3Interrupt)?ABSOLUTE (__AltOC3Interrupt):DEFINED (__OC3Interrupt)?ABSOLUTE (__OC3Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000148          0x4 LONG 0x29a DEFINED (__AltOC4Interrupt)?ABSOLUTE (__AltOC4Interrupt):DEFINED (__OC4Interrupt)?ABSOLUTE (__OC4Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00014a          0x4 LONG 0x2e22 DEFINED (__AltT4Interrupt)?ABSOLUTE (__AltT4Interrupt):DEFINED (__T4Interrupt)?ABSOLUTE (__T4Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00014a          0x4 LONG 0x29a DEFINED (__AltT4Interrupt)?ABSOLUTE (__AltT4Interrupt):DEFINED (__T4Interrupt)?ABSOLUTE (__T4Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00014c          0x4 LONG 0x29a DEFINED (__AltT5Interrupt)?ABSOLUTE (__AltT5Interrupt):DEFINED (__T5Interrupt)?ABSOLUTE (__T5Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00014e          0x4 LONG 0x29a DEFINED (__AltINT2Interrupt)?ABSOLUTE (__AltINT2Interrupt):DEFINED (__INT2Interrupt)?ABSOLUTE (__INT2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000150          0x4 LONG 0x29a DEFINED (__AltU2RXInterrupt)?ABSOLUTE (__AltU2RXInterrupt):DEFINED (__U2RXInterrupt)?ABSOLUTE (__U2RXInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000152          0x4 LONG 0x29a DEFINED (__AltU2TXInterrupt)?ABSOLUTE (__AltU2TXInterrupt):DEFINED (__U2TXInterrupt)?ABSOLUTE (__U2TXInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000154          0x4 LONG 0x29a DEFINED (__AltSPI2ErrInterrupt)?ABSOLUTE (__AltSPI2ErrInterrupt):DEFINED (__SPI2ErrInterrupt)?ABSOLUTE (__SPI2ErrInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000156          0x4 LONG 0x318a DEFINED (__AltSPI2Interrupt)?ABSOLUTE (__AltSPI2Interrupt):DEFINED (__SPI2Interrupt)?ABSOLUTE (__SPI2Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000156          0x4 LONG 0x3164 DEFINED (__AltSPI2Interrupt)?ABSOLUTE (__AltSPI2Interrupt):DEFINED (__SPI2Interrupt)?ABSOLUTE (__SPI2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000158          0x4 LONG 0x29a DEFINED (__AltInterrupt34)?ABSOLUTE (__AltInterrupt34):DEFINED (__Interrupt34)?ABSOLUTE (__Interrupt34):ABSOLUTE (__DefaultInterrupt)
                   0x00015a          0x4 LONG 0x29a DEFINED (__AltInterrupt35)?ABSOLUTE (__AltInterrupt35):DEFINED (__Interrupt35)?ABSOLUTE (__Interrupt35):ABSOLUTE (__DefaultInterrupt)
                   0x00015c          0x4 LONG 0x29a DEFINED (__AltInterrupt36)?ABSOLUTE (__AltInterrupt36):DEFINED (__Interrupt36)?ABSOLUTE (__Interrupt36):ABSOLUTE (__DefaultInterrupt)
@@ -1605,7 +1603,7 @@ LOAD default_isr
 LOAD data_init
 
 .debug_pubtypes
-                  0x000138        0x5dd
+                  0x000138        0x5a1
  .debug_pubtypes
                   0x000138         0x20 build/default/production/main.o
  .debug_pubtypes
@@ -1629,104 +1627,104 @@ LOAD data_init
  .debug_pubtypes
                   0x000659         0x12 build/default/production/MessagingMenu.o
  .debug_pubtypes
-                  0x00066b         0x6b build/default/production/ClockMenu.o
+                  0x00066b         0x2f build/default/production/ClockMenu.o
  .debug_pubtypes
-                  0x0006d6         0x1f build/default/production/keyboard.o
+                  0x00069a         0x1f build/default/production/keyboard.o
  .debug_pubtypes
-                  0x0006f5         0x20 build/default/production/passwordScreen.o
+                  0x0006b9         0x20 build/default/production/passwordScreen.o
 
 __c30_signature
-                  0x000716        0x10e
+                  0x0006da        0x10e
  __c30_signature
-                  0x000716          0x6 build/default/production/main.o
+                  0x0006da          0x6 build/default/production/main.o
  __c30_signature
-                  0x00071c          0x6 build/default/production/nokiaLCD.o
+                  0x0006e0          0x6 build/default/production/nokiaLCD.o
  __c30_signature
-                  0x000722          0x6 build/default/production/shared.o
+                  0x0006e6          0x6 build/default/production/shared.o
  __c30_signature
-                  0x000728          0x6 build/default/production/stateFunctions.o
+                  0x0006ec          0x6 build/default/production/stateFunctions.o
  __c30_signature
-                  0x00072e          0x6 build/default/production/timers.o
+                  0x0006f2          0x6 build/default/production/timers.o
  __c30_signature
-                  0x000734          0x6 build/default/production/spiInit.o
+                  0x0006f8          0x6 build/default/production/spiInit.o
  __c30_signature
-                  0x00073a          0x6 build/default/production/menuScreens.o
+                  0x0006fe          0x6 build/default/production/menuScreens.o
  __c30_signature
-                  0x000740          0x6 build/default/production/adc.o
+                  0x000704          0x6 build/default/production/adc.o
  __c30_signature
-                  0x000746          0x6 build/default/production/selectorButton.o
+                  0x00070a          0x6 build/default/production/selectorButton.o
  __c30_signature
-                  0x00074c          0x6 build/default/production/MainMenu.o
+                  0x000710          0x6 build/default/production/MainMenu.o
  __c30_signature
-                  0x000752          0x6 build/default/production/MessagingMenu.o
+                  0x000716          0x6 build/default/production/MessagingMenu.o
  __c30_signature
-                  0x000758          0x6 build/default/production/ClockMenu.o
+                  0x00071c          0x6 build/default/production/ClockMenu.o
  __c30_signature
-                  0x00075e          0x6 build/default/production/keyboard.o
+                  0x000722          0x6 build/default/production/keyboard.o
  __c30_signature
-                  0x000764          0x6 build/default/production/passwordScreen.o
+                  0x000728          0x6 build/default/production/passwordScreen.o
  __c30_signature
-                  0x00076a          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libpic30-elf.a(crt0_standard.o)
+                  0x00072e          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libpic30-elf.a(crt0_standard.o)
  __c30_signature
-                  0x000770          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libpic30-elf.a(data_init_standard.o)
+                  0x000734          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libpic30-elf.a(data_init_standard.o)
  __c30_signature
-                  0x000776          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(addsf3.eo)
+                  0x00073a          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(addsf3.eo)
  __c30_signature
-                  0x00077c          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(divsf3.eo)
+                  0x000740          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(divsf3.eo)
  __c30_signature
-                  0x000782          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(feqltle.eo)
+                  0x000746          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(feqltle.eo)
  __c30_signature
-                  0x000788          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(fgtge.eo)
+                  0x00074c          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(fgtge.eo)
  __c30_signature
-                  0x00078e          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(fixunssfsi.eo)
+                  0x000752          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(fixunssfsi.eo)
  __c30_signature
-                  0x000794          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(floatsisf.eo)
+                  0x000758          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(floatsisf.eo)
  __c30_signature
-                  0x00079a          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(floatunsisf.eo)
+                  0x00075e          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(floatunsisf.eo)
  __c30_signature
-                  0x0007a0          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(fpack.eo)
+                  0x000764          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(fpack.eo)
  __c30_signature
-                  0x0007a6          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(funpack.eo)
+                  0x00076a          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(funpack.eo)
  __c30_signature
-                  0x0007ac          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(funpack2.eo)
+                  0x000770          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(funpack2.eo)
  __c30_signature
-                  0x0007b2          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(futil.eo)
+                  0x000776          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(futil.eo)
  __c30_signature
-                  0x0007b8          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(mulsf3.eo)
+                  0x00077c          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(mulsf3.eo)
  __c30_signature
-                  0x0007be          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(fcompare.eo)
+                  0x000782          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(fcompare.eo)
  __c30_signature
-                  0x0007c4          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(floatdisf.eo)
+                  0x000788          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(floatdisf.eo)
  __c30_signature
-                  0x0007ca          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(floatundisf.eo)
+                  0x00078e          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(floatundisf.eo)
  __c30_signature
-                  0x0007d0          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libc-elf.a(strcmp.eo)
+                  0x000794          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libc-elf.a(strcmp.eo)
  __c30_signature
-                  0x0007d6          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libc-elf.a(strlen.eo)
+                  0x00079a          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libc-elf.a(strlen.eo)
  __c30_signature
-                  0x0007dc          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libc-elf.a(sprintf_cdnopuxX.XXeo)
+                  0x0007a0          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libc-elf.a(sprintf_cdnopuxX.XXeo)
  __c30_signature
-                  0x0007e2          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libc-elf.a(doprnt_cdnopuxX.XXeo)
+                  0x0007a6          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libc-elf.a(doprnt_cdnopuxX.XXeo)
  __c30_signature
-                  0x0007e8          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libc-elf.a(fputc.eo)
+                  0x0007ac          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libc-elf.a(fputc.eo)
  __c30_signature
-                  0x0007ee          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libc-elf.a(_iob.eo)
+                  0x0007b2          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libc-elf.a(_iob.eo)
  __c30_signature
-                  0x0007f4          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libc-elf.a(flsbuf.eo)
+                  0x0007b8          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libc-elf.a(flsbuf.eo)
  __c30_signature
-                  0x0007fa          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libpic30-elf.a(write.eo)
+                  0x0007be          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libpic30-elf.a(write.eo)
  __c30_signature
-                  0x000800          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libpic30-elf.a(c30_uart.eo)
+                  0x0007c4          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libpic30-elf.a(c30_uart.eo)
  __c30_signature
-                  0x000806          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(udivsi3.eo)
+                  0x0007ca          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(udivsi3.eo)
  __c30_signature
-                  0x00080c          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(mulsi3.eo)
+                  0x0007d0          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(mulsi3.eo)
  __c30_signature
-                  0x000812          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(divmoddi3.eo)
+                  0x0007d6          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(divmoddi3.eo)
  __c30_signature
-                  0x000818          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(muldi3.eo)
+                  0x0007dc          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(muldi3.eo)
  __c30_signature
-                  0x00081e          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(umuldi3.eo)
+                  0x0007e2          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(umuldi3.eo)
 
 .ndata              0x0800        0x10a
  .ndata             0x0800         0x4c build/default/production/keyboard.o
@@ -1823,49 +1821,48 @@ __c30_signature
 .dinit            0x0029d0        0x19c
  .dinit           0x0029d0        0x19c data_init
 
-.text             0x002b6c        0x734
+.text             0x002b6c        0x70e
  .text            0x002b6c        0x186 build/default/production/MainMenu.o
                   0x002b6c                  _displayMainMenu
                   0x002b78                  _initMainMenuText
                   0x002c0a                  _updateMainMenuText
                   0x002c52                  _getCursorHighlightStateMainMenu
- .text            0x002cf2        0x156 build/default/production/ClockMenu.o
+ .text            0x002cf2        0x130 build/default/production/ClockMenu.o
                   0x002cf2                  _initClock
                   0x002d06                  _initClockMenu
                   0x002d58                  _displayClockMenu
                   0x002d7e                  _getTimeString
                   0x002da6                  __T3Interrupt
-                  0x002e22                  __T4Interrupt
- .text            0x002e48         0xfc build/default/production/passwordScreen.o
-                  0x002e48                  _initPasswordScreen
-                  0x002e82                  _readPasswordInput
-                  0x002ec0                  _passwordStateTransition
-                  0x002eee                  _exceedsPasswordSize
-                  0x002f26                  _compareInputAndPassword
- .text            0x002f44         0xf0 build/default/production/timers.o
-                  0x002f44                  _delayUs
-                  0x002f92                  _delayMs
-                  0x002fea                  _initTimer3
-                  0x003014                  _delaySeconds
- .text            0x003034         0xee build/default/production/adc.o
-                  0x003034                  _initADC
-                  0x00308a                  _getADCBuffVal
- .text            0x003122         0x76 build/default/production/spiInit.o
-                  0x003122                  _initSPI
-                  0x00312a                  _init_SPI2
-                  0x003170                  _write_SPI2
-                  0x00318a                  __SPI2Interrupt
- .text            0x003198         0x6a build/default/production/menuScreens.o
-                  0x003198                  _initMainMenu
-                  0x0031d4                  _goBackToMainMenu
-                  0x0031da                  __CNInterrupt
- .text            0x003202         0x48 build/default/production/stateFunctions.o
-                  0x003202                  _initState
-                  0x00322c                  _waitState
-                  0x003232                  _menuScreensState
-                  0x00323a                  _initPasswordState
-                  0x003242                  _passwordState
- .text            0x00324a         0x3a build/default/production/main.o
-                  0x00324a                  _main
- .text            0x003284         0x1c build/default/production/selectorButton.o
-                  0x003284                  _initSelectorButton1
+ .text            0x002e22         0xfc build/default/production/passwordScreen.o
+                  0x002e22                  _initPasswordScreen
+                  0x002e5c                  _readPasswordInput
+                  0x002e9a                  _passwordStateTransition
+                  0x002ec8                  _exceedsPasswordSize
+                  0x002f00                  _compareInputAndPassword
+ .text            0x002f1e         0xf0 build/default/production/timers.o
+                  0x002f1e                  _delayUs
+                  0x002f6c                  _delayMs
+                  0x002fc4                  _initTimer3
+                  0x002fee                  _delaySeconds
+ .text            0x00300e         0xee build/default/production/adc.o
+                  0x00300e                  _initADC
+                  0x003064                  _getADCBuffVal
+ .text            0x0030fc         0x76 build/default/production/spiInit.o
+                  0x0030fc                  _initSPI
+                  0x003104                  _init_SPI2
+                  0x00314a                  _write_SPI2
+                  0x003164                  __SPI2Interrupt
+ .text            0x003172         0x6a build/default/production/menuScreens.o
+                  0x003172                  _initMainMenu
+                  0x0031ae                  _goBackToMainMenu
+                  0x0031b4                  __CNInterrupt
+ .text            0x0031dc         0x48 build/default/production/stateFunctions.o
+                  0x0031dc                  _initState
+                  0x003206                  _waitState
+                  0x00320c                  _menuScreensState
+                  0x003214                  _initPasswordState
+                  0x00321c                  _passwordState
+ .text            0x003224         0x3a build/default/production/main.o
+                  0x003224                  _main
+ .text            0x00325e         0x1c build/default/production/selectorButton.o
+                  0x00325e                  _initSelectorButton1
