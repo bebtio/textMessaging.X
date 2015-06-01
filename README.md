@@ -14,7 +14,7 @@ Here is a list of these parts and some purchasing information.
 
 Name                                    Cost (USD)  Part#           Website
 PIC24FJ64GA002+Starter Board            79.99       DM300027        http://www.microchipdirect.com/ProductSearch.aspx?Keywords=DM300027                                
-PICit 3 In-Circuit Debugger             47.95       PG164130        http://www.microchipdirect.com/ProductSearch.aspx?keywords=PG164130  
+PICKit 3 In-Circuit Debugger             47.95       PG164130        http://www.microchipdirect.com/ProductSearch.aspx?keywords=PG164130  
 Graphic LCD 84x48 - Nokia 5110          09.95       LCD-10168 ROHS  https://www.sparkfun.com/products/10168
 RFM12B-S2 Wireless Transceiver - 915MHz 06.95       WRL-12031 ROHS  https://www.sparkfun.com/products/12031
 Mini Pushbutton Switch                  00.35       COM-00097 ROHS  https://www.sparkfun.com/products/97
